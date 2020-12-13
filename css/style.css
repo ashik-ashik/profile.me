@@ -21,6 +21,10 @@
     background: #fc04c6d8 url(../img/ashik-04.jpeg) fixed center center no-repeat;
     background-blend-mode: multiply;
 }
+#skill .overlay-para {
+    background: #fc04c6d8 url(../img/ashik-02.JPG) fixed center center no-repeat;
+    background-blend-mode: multiply;
+}
 #interest .overlay-para {
     background: #0408fcd8 url(../img/ashik-05.jpeg) fixed center center no-repeat;
     background-blend-mode: multiply;
@@ -135,6 +139,11 @@
 }
 
 
+/* skill section css */
+#skill .skill-content .bx{
+    color: #fff;
+    font-size: 30px;
+}
 
 /* interest section css */
 
@@ -212,10 +221,11 @@
     z-index: 2;
     text-align: end;
     padding-top: 7px;
+    padding-right: 2px;
     transition: ease-in-out .4s;
 }
 #contact .box p::after{
-    content: "";
+    content: "Here";
     position: absolute;
     width: 50%;
     height: 100%;
@@ -223,11 +233,14 @@
     right: 0;
     background: linear-gradient( -90deg, #f00, #38b6ff, #0fa7ff);
     z-index: 2;
+    text-align: start;
+    padding-left: 2px;
+    padding-top: 7px;
     transition: ease .4s;
 }
 #contact .box p:hover::before,
 #contact .box p:hover::after{
-    width: 20%;
+    width: 10%;
     opacity: 0;
 }
 

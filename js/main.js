@@ -9,6 +9,13 @@ var typed3 = new Typed('#name', {
 });
 // 
 $(document).ready(function(){
+
+
+  // counter
+  $('.counting').counterUp({
+    delay: 10,
+    time: 1200
+});
     // Init AOS
     function aos_init() {
         AOS.init({

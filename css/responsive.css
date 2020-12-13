@@ -9,6 +9,7 @@
     }
     .hero-parallax {
         height: 200px;
+        padding-top: 48px !important;
     }
     #hero-profile{
     width: 120px;
@@ -38,6 +39,7 @@
     }
     .hero-parallax {
         height: 320px;
+        padding-top: 50px !important;
     }
     #hero-profile{
     width: 190px;

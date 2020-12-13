@@ -1,0 +1,324 @@
+
+
+
+/* common css */
+
+.parallax-window {
+    height: 100vh;
+    /* background: #000000d8; */
+}
+#about .parallax-window {
+    background: #ebfc04c0;
+}
+#itknow .parallax-window {
+    background: #fc04c6d8;
+}
+#interest .parallax-window {
+    background: #041dfcd8;
+}
+#certification .parallax-window {
+    background: #1acf02c5;
+}
+#contact .parallax-window {
+    background: #ae00ffd8;
+}
+
+.section-title{
+    color: #fff;
+    position: relative;
+    background: url(../img/FmNa.gif) fixed center center no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#hero .section-title{
+    background: url(../img/star1.gif) center center;
+    -webkit-background-clip: text;
+}
+#about .section-title{
+    background: url(../img/ashik-03.jpeg) fixed center center no-repeat;
+    -webkit-background-clip: text;
+}
+#education .section-title{
+    background: url(../img/ashik-04.jpeg) fixed center center no-repeat;
+    -webkit-background-clip: text;
+}
+#itknow .section-title{
+    background: url(../img/ashik-02.JPG) fixed center center no-repeat;
+    -webkit-background-clip: text;
+}
+#interest .section-title{
+    background: url(../img/ashik-04.jpeg) fixed center center no-repeat;
+    -webkit-background-clip: text;
+}
+#certification .section-title{
+    background: url(../img/ashik-03.jpeg) fixed center center no-repeat;
+    -webkit-background-clip: text;
+}
+#contact .section-title{
+    background: url(../img/ashik-05.jpeg) fixed center center no-repeat;
+    -webkit-background-clip: text;
+}
+
+.section-title::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    text-shadow: -5px 5px 20px #000,
+                 -7px 7px 25px #000,
+                 -12px 13px 30px #000,
+                 -20px 20px 40px #000;
+}
+#hero .section-title::before{
+    text-shadow: none;
+}
+
+/* commmon end  */
+
+/* hero section css */
+.hero-parallax {
+    height: 400px;
+    background: #09ff00c9;
+}
+#hero-profile{
+    top: 100%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+#hero-profile img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+#hero-profile::before{
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px dotted;
+    border-left-color: #ffffff;
+    border-top-color: #ff0000;
+    border-right-color: #000000;
+    border-bottom-color: #001aff;
+    transition: .3s;
+    animation: heropro linear .8s infinite forwards;
+}
+@keyframes heropro{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(720deg);
+    }
+}
+
+
+/* about section css */
+
+.result{
+    position: relative;
+}
+.result::after{
+    position: absolute;
+    content: "Touch";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    text-align: center;
+    transition: ease-in-out .5s;
+    background: linear-gradient(90deg, #d48d0a, #00b9b9);
+    box-shadow: 0px 0px 15px #0000005e;
+}
+.result:hover::after{
+    width: 30%;
+    content:  '';
+    opacity: 0;
+}
+
+
+
+/* it knowledge section css */
+
+.itknow-content .bx{
+    font-size: 25px;
+    animation: itlight linear 1.5s infinite forwards;
+}
+
+@keyframes itlight{
+    0%{
+        color: yellow !important;
+    }
+    20%{
+        color: #fff !important;
+    }
+    100%{
+        color: red;
+    }
+    
+}
+
+
+
+/* interest section css */
+
+
+#interest .interest-content .bx{
+    color: #fff;
+    font-size: 30px;
+}
+#interest .interest-content span{
+    color: #fff;
+    font-size: 20px;
+}
+
+/* certifications section */
+.certi-icon{
+    font-size: 50px;
+    animation: certiani linear 3s  infinite;
+}
+@keyframes certiani{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* contact seciton css */
+
+.contact-title{
+    background: url(../img/color/color2.jpg);
+}
+.contact-map{
+    background: url(../img/color/color3.jpg);
+}
+.contact-title,
+.contact-map{
+    font-weight: 900;
+    letter-spacing: 2px;
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: context linear 5s infinite;
+    transition: .5s;
+}
+@keyframes context{
+    0%{
+        background-position: left 0%  top 0%;
+    } 
+    100%{
+        background-position: left 100% top 0%;
+    }
+}
+#contact .box,
+#contact .box-small{
+    background: #fd1b1b86;
+}
+#contact .bx{
+    color: #fff;
+    border-color: #fff;
+    font-size: 30px;
+}
+#contact .box p{
+    color: #fff;
+    padding: 10px ;
+    font-weight: 500;
+}
+#contact .box p::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient( 90deg, #f00, #49f81e,#2ddb01);
+    z-index: 2;
+    transition: ease-in-out .4s;
+}
+#contact .box p::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient( -90deg, #f00, #38b6ff, #0fa7ff);
+    z-index: 2;
+    transition: ease-in-out .4s;
+}
+#contact .box p:hover::before,
+#contact .box p:hover::after{
+    width: 0%;
+}
+
+
+#message{
+    width: 100%;
+    height: 190px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px;
+    color: darkblue;
+    font-size: small;
+}
+#name{
+    color: green;
+    text-transform: uppercase;
+}
+#email{
+    color: red;
+    text-transform: lowercase;
+}
+#subject{
+    color: darkorange;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.success{
+    background: #00a71c;
+    padding: 7px 10px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    transition: .4s;
+    animation: submitInfo linear 5s forwards;
+}
+.error{
+    background: darkorange;
+    padding: 7px 10px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    transition: .4s;
+    animation: submitInfo linear 5s forwards;
+}
+
+@keyframes submitInfo{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: none;
+        background: #000;
+    }
+    100%{
+        opacity: 0;
+    }
+}

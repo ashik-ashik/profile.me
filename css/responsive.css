@@ -1,0 +1,97 @@
+
+
+/*<!--For X-small device-->*/
+
+@media (max-width: 767px) {
+    .section-title{
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .hero-parallax {
+        height: 200px;
+    }
+    #hero-profile{
+    width: 120px;
+    height: 120px;
+}
+#hero-profile img{
+    width: 100%;
+    height: 100%;
+}
+#hero-profile::before{
+    border: 2px dotted;
+      border-left-color: #ffffff;
+    border-top-color: #ff0000;
+    border-right-color: #000000;
+    border-bottom-color: #001aff;
+    animation-duration: 2.2s;
+}
+}
+
+
+/*<!--For small device-->*/
+
+@media only screen and (min-width:768px) and (max-width: 991px) {
+    .section-title{
+        font-size: 50px;
+        font-weight: 900;
+    }
+    .hero-parallax {
+        height: 320px;
+    }
+    #hero-profile{
+    width: 190px;
+    height: 190px;
+}
+#hero-profile img{
+    width: 100%;
+    height: 100%;
+}
+#hero-profile::before{
+    border: 4px dotted;
+      border-left-color: #ffffff;
+    border-top-color: #ff0000;
+    border-right-color: #000000;
+    border-bottom-color: #001aff;
+    animation-duration: 1.6s;
+}
+}
+
+
+/*<!--For medium device-->*/
+
+@media only screen and (min-width:992px) and (max-width: 1199px) {
+    .section-title{
+        font-size: 80px;
+        font-weight: 900;
+    }
+    .hero-parallax {
+        height: 370px;
+    }
+    #hero-profile{
+    width: 260px;
+    height: 260px;
+}
+#hero-profile img{
+    width: 100%;
+    height: 100%;
+}
+#hero-profile::before{
+    border: 7px dotted;
+      border-left-color: #ffffff;
+    border-top-color: #ff0000;
+    border-right-color: #000000;
+    border-bottom-color: #001aff;
+}
+}
+
+
+
+/*<!--For Large device-->*/
+
+@media (min-width:1200px) {
+    .section-title{
+        font-size: 110px;
+        font-weight: 900;
+    }
+}

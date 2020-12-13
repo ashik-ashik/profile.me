@@ -5,75 +5,39 @@
 
 .parallax-window {
     height: 100vh;
+    /* z-index: -5; */
     /* background: #000000d8; */
 }
 #about .overlay-para {
-    background: #ebfc04c0;
+    background: #ebfc04 url(../img/ashik-02.JPG) fixed center center no-repeat ;
+    background-blend-mode: multiply;
+    /* z-index: 1; */
 }
 #education .overlay-para {
-    background: #fc0404c0;
+    background: #fc0404 url(../img/ashik-03.jpeg) fixed center center no-repeat;
+    background-blend-mode: multiply;
 }
 #itknow .overlay-para {
-    background: #fc04c6d8;
+    background: #fc04c6d8 url(../img/ashik-04.jpeg) fixed center center no-repeat;
+    background-blend-mode: multiply;
 }
 #interest .overlay-para {
-    background: #0408fcd8;
+    background: #0408fcd8 url(../img/ashik-05.jpeg) fixed center center no-repeat;
+    background-blend-mode: multiply;
 }
 #certification .overlay-para {
-    background: #1acf02c5;
+    background: #1acf02c5 url(../img/hero.jpeg) fixed center center no-repeat;
+    background-blend-mode: multiply;
 }
 #contact .overlay-para {
-    background: #ae00ffd8;
+    background: #ae00ffd8 url(../img/ashik-03.jpeg) fixed center center no-repeat;
+    background-blend-mode: multiply;
 }
 
 .section-title{
     color: #fff;
-    position: relative;
-    background: url(../img/FmNa.gif) fixed center center no-repeat;
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-#hero .section-title{
-    background: url(../img/star1.gif) center center;
-    -webkit-background-clip: text;
-}
-#about .section-title{
-    background: url(../img/ashik-03.jpeg) fixed center center no-repeat;
-    -webkit-background-clip: text;
-}
-#education .section-title{
-    background: url(../img/ashik-04.jpeg) fixed center center no-repeat;
-    -webkit-background-clip: text;
-}
-#itknow .section-title{
-    background: url(../img/ashik-02.JPG) fixed center center no-repeat;
-    -webkit-background-clip: text;
-}
-#interest .section-title{
-    background: url(../img/ashik-04.jpeg) fixed center center no-repeat;
-    -webkit-background-clip: text;
-}
-#certification .section-title{
-    background: url(../img/ashik-03.jpeg) fixed center center no-repeat;
-    -webkit-background-clip: text;
-}
-#contact .section-title{
-    background: url(../img/ashik-05.jpeg) fixed center center no-repeat;
-    -webkit-background-clip: text;
 }
 
-.section-title::before{
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    text-shadow: -5px 5px 20px #000,
-                 -7px 7px 25px #000,
-                 -12px 13px 30px #000,
-                 -20px 20px 40px #000;
-}
 #hero .section-title::before{
     text-shadow: none;
 }
@@ -83,7 +47,8 @@
 /* hero section css */
 .hero-parallax {
     height: 400px;
-    background: #09ff00c9;
+    background: #00fff2c9 url(../img/hero.jpeg) fixed center center no-repeat;
+    background-blend-mode: multiply;
 }
 #hero-profile{
     /* top: 100%; */
@@ -237,7 +202,7 @@
     font-weight: 500;
 }
 #contact .box p::before{
-    content: "";
+    content: "Touch";
     position: absolute;
     width: 50%;
     height: 100%;
@@ -245,6 +210,8 @@
     left: 0;
     background: linear-gradient( 90deg, #f00, #49f81e,#2ddb01);
     z-index: 2;
+    text-align: end;
+    padding-top: 7px;
     transition: ease-in-out .4s;
 }
 #contact .box p::after{
@@ -256,11 +223,12 @@
     right: 0;
     background: linear-gradient( -90deg, #f00, #38b6ff, #0fa7ff);
     z-index: 2;
-    transition: ease-in-out .4s;
+    transition: ease .4s;
 }
 #contact .box p:hover::before,
 #contact .box p:hover::after{
-    width: 0%;
+    width: 20%;
+    opacity: 0;
 }
 
 

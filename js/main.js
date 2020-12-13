@@ -1,6 +1,12 @@
 
-
-
+var typed3 = new Typed('#name', {
+  strings: ['ashik ali'],
+  typeSpeed: 90,
+  backSpeed: 70,
+  cursorChar: '|',
+  smartBackspace: true,
+  loop: true
+});
 // 
 $(document).ready(function(){
     // Init AOS

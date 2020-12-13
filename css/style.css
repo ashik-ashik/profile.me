@@ -7,19 +7,22 @@
     height: 100vh;
     /* background: #000000d8; */
 }
-#about .parallax-window {
+#about .overlay-para {
     background: #ebfc04c0;
 }
-#itknow .parallax-window {
+#education .overlay-para {
+    background: #fc0404c0;
+}
+#itknow .overlay-para {
     background: #fc04c6d8;
 }
-#interest .parallax-window {
-    background: #041dfcd8;
+#interest .overlay-para {
+    background: #0408fcd8;
 }
-#certification .parallax-window {
+#certification .overlay-para {
     background: #1acf02c5;
 }
-#contact .parallax-window {
+#contact .overlay-para {
     background: #ae00ffd8;
 }
 
@@ -83,7 +86,7 @@
     background: #09ff00c9;
 }
 #hero-profile{
-    top: 100%;
+    /* top: 100%; */
     left: 50%;
     width: 300px;
     height: 300px;

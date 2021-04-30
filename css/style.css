@@ -26,8 +26,9 @@
     background-blend-mode: multiply;
 }
 #interest .overlay-para {
-    background: #0408fcd8 url(../img/ashik-05.jpeg) fixed center center no-repeat;
+    background: #0408fcd8 url(../img/ashik-inter.jpg) fixed center center no-repeat;
     background-blend-mode: multiply;
+	background-size: cover;
 }
 #certification .overlay-para {
     background: #1acf02c5 url(../img/hero.jpeg) fixed center center no-repeat;
